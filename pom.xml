@@ -4,7 +4,7 @@
 
     <groupId>com.pj</groupId>
     <artifactId>testrelease</artifactId>
-    <version>1.6</version>
+    <version>1.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -39,7 +39,7 @@
         <url>https://github.com/peijian163/testrelease.git</url>
         <connection>scm:git:${scm.url}</connection>
         <developerConnection>scm:git:${scm.url}</developerConnection>
-    <tag>testrelease-1.6</tag>
+    <tag>testrelease-1.1</tag>
   </scm>
 
     <build>
