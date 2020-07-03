@@ -55,7 +55,7 @@
                     <!--<tagNameFormat>v${project.num.version}</tagNameFormat>-->
 
                     <!--<updateWorkingCopyVersions>true</updateWorkingCopyVersions>-->
-                    <projectVersionPolicyId>semver</projectVersionPolicyId>
+                    <!--<projectVersionPolicyId>semver</projectVersionPolicyId>-->
                     <!--<providerImplementations>-->
                         <!--<git>jgit</git>-->
                     <!--</providerImplementations>-->
