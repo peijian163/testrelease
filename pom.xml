@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.pj</groupId>
+    <artifactId>testrelease</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <url>https://nexus.dxy.net/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>https://nexus.dxy.net/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nexus-public</id>
+            <url>https://nexus.dxy.net/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <scm>
+        <url>https://github.com/peijian163/testrelease.git</url>
+        <connection>scm:git:${scm.url}</connection>
+        <developerConnection>scm:git:${scm.url}</developerConnection>
+    <tag>testrelease-1.1</tag>
+  </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <mavenHome>/usr/local/opt/maven@3.3</mavenHome>
+                    <!--<releaseVersion>1.1</releaseVersion>-->
+                    <!--<releaseVersion>1.1-SNAPSHOT</releaseVersion>-->
+                    <!--<developmentVersion>1.1-SNAPSHOT</developmentVersion>-->
+                    <!--<tagNameFormat>v${project.num.version}</tagNameFormat>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
