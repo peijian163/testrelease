@@ -4,7 +4,7 @@
 
     <groupId>com.pj</groupId>
     <artifactId>testrelease</artifactId>
-    <version>1.1</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -55,17 +55,19 @@
                     <!--<developmentVersion>1.1-SNAPSHOT</developmentVersion>-->
                     <!--<tagNameFormat>v${project.num.version}</tagNameFormat>-->
 
-                    <providerImplementations>
-                        <git>jgit</git>
-                    </providerImplementations>
+                    <updateWorkingCopyVersions>true</updateWorkingCopyVersions>
+
+                    <!--<providerImplementations>-->
+                        <!--<git>jgit</git>-->
+                    <!--</providerImplementations>-->
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-jgit</artifactId>
-                        <version>1.9.5</version>
-                    </dependency>
-                </dependencies>
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.apache.maven.scm</groupId>-->
+                        <!--<artifactId>maven-scm-provider-jgit</artifactId>-->
+                        <!--<version>1.9.5</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
             </plugin>
         </plugins>
     </build>
