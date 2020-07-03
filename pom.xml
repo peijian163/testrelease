@@ -54,7 +54,18 @@
                     <!--<releaseVersion>1.1-SNAPSHOT</releaseVersion>-->
                     <!--<developmentVersion>1.1-SNAPSHOT</developmentVersion>-->
                     <!--<tagNameFormat>v${project.num.version}</tagNameFormat>-->
+
+                    <providerImplementations>
+                        <git>jgit</git>
+                    </providerImplementations>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-jgit</artifactId>
+                        <version>1.9.5</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
