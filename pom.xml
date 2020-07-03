@@ -56,7 +56,7 @@
                     <!--<tagNameFormat>v${project.num.version}</tagNameFormat>-->
 
                     <!--<updateWorkingCopyVersions>true</updateWorkingCopyVersions>-->
-                    <!--<projectVersionPolicyId>semver</projectVersionPolicyId>-->
+                    <projectVersionPolicyId>snapshotReleaseVersionPolicy</projectVersionPolicyId>
                     <!--<providerImplementations>-->
                         <!--<git>jgit</git>-->
                     <!--</providerImplementations>-->
@@ -64,15 +64,12 @@
                     <!--<defaultReleaseVersion>1.1-tesst-SNAPSHOT</defaultReleaseVersion>-->
 <!---->
                 </configuration>
-                <!--<dependencies>-->
-                    <!--<dependency>-->
-                        <!--<groupId>org.apache.maven.scm</groupId>-->
-                        <!--<artifactId>maven-scm-provider-jgit</artifactId>-->
-                        <!--<version>1.9.5</version>-->
-                    <!--</dependency>-->
-                <!--</dependencies>-->
-
-                <!--<dependencies>-->
+                <dependencies>
+                    <dependency>
+                        <groupId>com.dxy.ask.cloud</groupId>
+                        <artifactId>snapshot-release-version-policy</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
+                    </dependency>
                     <!--<dependency>-->
                         <!--<groupId>org.apache.maven.release</groupId>-->
                         <!--<artifactId>maven-release-oddeven-policy</artifactId>-->
@@ -84,7 +81,7 @@
                         <!--<artifactId>maven-release-semver-policy</artifactId>-->
                         <!--<version>3.0.0-M1</version>-->
                     <!--</dependency>-->
-                <!--</dependencies>-->
+                </dependencies>
             </plugin>
         </plugins>
     </build>
