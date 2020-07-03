@@ -39,7 +39,6 @@
         <url>https://github.com/peijian163/testrelease.git</url>
         <connection>scm:git:${scm.url}</connection>
         <developerConnection>scm:git:${scm.url}</developerConnection>
-    <tag>testrelease-1.1</tag>
   </scm>
 
     <build>
