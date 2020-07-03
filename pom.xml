@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.2</version>
+                <version>3.0.0</version>
                 <configuration>
                     <mavenHome>/usr/local/opt/maven@3.3</mavenHome>
                     <!--<releaseVersion>1.1</releaseVersion>-->
@@ -60,6 +60,9 @@
                     <!--<providerImplementations>-->
                         <!--<git>jgit</git>-->
                     <!--</providerImplementations>-->
+
+                    <defaultReleaseVersion>1.1-tesst-SNAPSHOT</defaultReleaseVersion>
+
                 </configuration>
                 <!--<dependencies>-->
                     <!--<dependency>-->
@@ -73,7 +76,7 @@
                     <dependency>
                         <groupId>org.apache.maven.release</groupId>
                         <artifactId>maven-release-oddeven-policy</artifactId>
-                        <version>2.5.2</version>
+                        <version>3.0.0</version>
                     </dependency>
 
                     <dependency>
