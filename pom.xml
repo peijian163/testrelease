@@ -21,7 +21,6 @@
         </snapshotRepository>
     </distributionManagement>
 
-
     <repositories>
         <repository>
             <id>nexus-public</id>
@@ -35,6 +34,7 @@
             </snapshots>
         </repository>
     </repositories>
+
 
     <scm>
         <url>https://github.com/peijian163/testrelease.git</url>
@@ -86,5 +86,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
