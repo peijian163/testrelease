@@ -50,6 +50,7 @@
                 <version>1.9.5</version>
                 <configuration>
                     <connectionType>developerConnection</connectionType>
+                    <message>auto increase version</message>
                 </configuration>
             </plugin>
         </plugins>
